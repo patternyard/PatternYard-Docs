@@ -1,6 +1,8 @@
 # Files exempt from the "no upstream hosts" CI guard.
-# Only doc/provenance references to the upstream project remain; all runtime
-# hosts were repointed to patternyard.dev on 2026-06-21 (runtime-independence sweep).
+# gitignore-style path globs; one per line. Only human documentation and migration
+# provenance belong here. Runtime/application code must NEVER be added to this list —
+# repoint it to patternyard.dev instead. All runtime hosts were repointed on 2026-06-21.
 
+# Documentation legitimately names the upstream project and its hosts.
 **/*.md
 **/*.mdx

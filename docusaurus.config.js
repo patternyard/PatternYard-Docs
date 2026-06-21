@@ -13,7 +13,7 @@ const config = {
     favicon: 'img/favicon.ico',
     
     // Set the production url of your site here
-    url: 'https://docs.penguinmod.com',
+    url: 'https://docs.patternyard.dev',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
@@ -86,7 +86,7 @@ const config = {
                     position: 'left'
                 },
                 {
-                    href: 'https://penguinmod.com/',
+                    href: 'https://patternyard.dev/',
                     label: 'PenguinMod',
                     position: 'right'
                 },

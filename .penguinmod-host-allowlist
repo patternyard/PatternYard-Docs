@@ -1,16 +1,6 @@
 # Files exempt from the "no upstream hosts" CI guard.
-# gitignore-style path globs; one per line. Only tooling that intentionally
-# references the upstream host to REWRITE it, migration provenance, and human
-# documentation belong here. Application/runtime code must never be hand-added.
+# Only doc/provenance references to the upstream project remain; all runtime
+# hosts were repointed to patternyard.dev on 2026-06-21 (runtime-independence sweep).
 
-# Documentation legitimately names the upstream project and its hosts.
 **/*.md
 **/*.mdx
-
-# --- Baseline-seeded (2026-06-20) ---------------------------------------------
-# These files already carried upstream hosts from upstream engine code at
-# rollout time. Allowlisting them keeps the guard green today AND lets future
-# upstream merges into wycats-main land here without breaking CI. The guard
-# still fails on NEW host refs in any other (patternyard) file. This list
-# doubles as the known upstream-host debt inventory for this repo.
-docusaurus.config.js
